@@ -1,0 +1,26 @@
+#title{
+    border-style: solid;
+    width: 100%;
+}
+#homepage{
+    border-style: solid;
+    width: 100%;
+}
+#navbar{
+    border-style: solid;
+    width:100%;
+}
+#main{
+    border-style: solid;
+    width:100%;
+}
+#leftBar{
+    border-style: solid;
+    width:25%;
+    float:left;
+}
+#rightBar{
+    border-style: solid;
+    width:75%;
+    float:right;
+}
