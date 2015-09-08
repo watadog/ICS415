@@ -1,0 +1,19 @@
+.jumbotron{
+    background-color: beige;
+}
+body{
+    background-color: aliceblue;
+}
+
+#leftBar{
+    background-color: cornsilk;
+}
+#rightBar{
+    background-color: cornsilk;
+}
+.footer{
+    position:relative;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
