@@ -1,0 +1,46 @@
+
+body{
+    background-color: darkgray;
+}
+
+#container1{
+    width:100%;
+    height:25%;
+}
+
+#container2, #container3{
+    width:100%;
+}
+.title{
+    height:25%;
+    width: 100%;
+    background-color: forestgreen;
+    display:inline-block;
+}
+.navbar{
+    background-color: darkgray;
+    display:inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    height: 50px;
+}
+.leftBar{
+    display:inline-block;
+    float:left;
+    width:25%;
+    height:450px;
+    background-color: darkseagreen;
+}
+.rightBar{
+    display:inline-block;
+    float: right;
+    height:450px;
+    width:74%;
+    background-color: darkseagreen;
+}
+#footer{
+    display:inline-block;
+    width: 100%;
+    background-color: darkseagreen;
+    height:50px;
+}
