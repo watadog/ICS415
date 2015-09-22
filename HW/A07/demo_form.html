@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+        <div class="form-group">
+            <label for="username">User name: </label>
+            <input type="text" name="name" id="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="form-group">
+            <label for="confirm">Confirm Password: </label>
+            <input type="password" name="confirm" id="confirm">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkForm(){
+
+            var query = window.location.search.slice(1);
+            var vars = query.split("&");
+            var nameValue = "";
+            var emailAddress = "";
+            var PW1 = "";
+            var PW2 = "";
+
+            for(var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] === "name"){
+                    nameValue=pair[1];
+                }
+                if(pair[0] === "email"){
+                    emailAddress=pair[1];
+                }
+                if(pair[0] === "password"){
+                    PW1=pair[1];
+                }
+                if(pair[0] === "confirm"){
+                    PW2=pair[1];
+                }
+            }
+            document.getElementById("name").innerHTML=nameValue;
+            document.getElementById("email").innerHTML=addressValue;
+            document.getElementById("password").innerHTML=phoneValue;
+            document.getElementById("confirm").innerHTML=phoneValue;
+            console.log(query);
+
+        }
+
+
+    </script>
+
+</body>
+</html>

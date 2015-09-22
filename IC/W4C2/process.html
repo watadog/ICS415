@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>process</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <table class="table table-bordered">
+        <tr>
+            <td class="field-label col-md-4 active">
+                <label id="name"> Value 1 Name</label>
+            </td>
+            <td class="col-md-4">
+                <label id="address">Value 1 Address</label>
+            </td>
+            <td class ="col-md-4">
+                <label id="phone"> Value 1 Phone#</label>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function getQueryVariable()
+        {
+            var query = window.location.search.slice(1);
+            var vars = query.split("&");
+            var nameValue = "";
+            var addressValue = "";
+            var phoneValue = "";
+            for(var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] === "name"){
+                    nameValue=pair[1];
+                }
+                if(pair[0] === "address"){
+                    addressValue=pair[1];
+                }
+                if(pair[0] === "phone"){
+                    phoneValue=pair[1];
+                }
+            }
+            document.getElementById("name").innerHTML=nameValue;
+            document.getElementById("address").innerHTML=addressValue;
+            document.getElementById("phone").innerHTML=phoneValue;
+            console.log(query);
+
+            return(false);
+        }
+        getQueryVariable();
+    </script>
+</body>
+
+</html>
