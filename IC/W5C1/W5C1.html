@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W5C1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="jumbotron">
+    <h1>Corey's Awesome Website</h1>
+</div>
+
+<div class="navbar">
+    <a>&nbsp</a><a href="A06.html">Home</a><a>&nbsp|&nbsp</a><a href="A06FORM.html">Forms</a><a>&nbsp|&nbsp</a><a href="A06PROFILE.html">Profile</a>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3" id="leftBar" style="border:ridge">
+            <p>&nbsp Sidebar</p>
+        </div>
+
+
+        <div class="col-xs-9" id="rightBar" style="border:ridge">
+            <h2>&nbsp Click this awesome stuff!</h2>
+            <ul class="nav nav-tabs">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu1">First</a></li>
+                <li><a href="#menu2">Second</a></li>
+                <li><a href="#menu3">Third</a></li>
+            </ul>
+
+
+            <div class="tab-content">
+
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>This is Home tab's content</p>
+                </div>
+
+                <div id="menu1" class="tab-pane fade">
+                    <h3>BUTTONS</h3>
+                </div>
+
+                <div id="menu2" class="tab-pane fade">
+                    <h3>FORMS</h3>
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+                    <h3>IMAGES</h3>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".jumbotron").on("click", function() {
+        $(this).css("background", "red");
+    });
+
+    $(".jumbotron").hover(
+            function () {
+                $(this).css("background", "#ddd");
+            },
+            function () {
+                $(this).css("background", "#ccc");
+            }
+
+    );
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A08</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="question1"  id="question1" style="border:ridge">
+    <h1 id="header1" >This is Question 1 (-)</h1>
+</div>
+
+<div class="answer1" id="answer1" style="border:ridge">
+    <h1>This is Answer 1</h1>
+</div>
+
+<div class="question2" id="question2" style="border:ridge">
+    <h1 id="header2" >This is Question 2 (-)</h1>
+</div>
+
+<div class="answer2" id="answer2" style="border:ridge">
+    <h1>This is Answer 2</h1>
+</div>
+
+<div class="question3" id="question3" style="border:ridge">
+    <h1 id="header3" >This is Question 3 (-)</h1>
+</div>
+
+<div class="answer3" id="answer3" style="border:ridge">
+    <h1>This is Answer 3</h1>
+</div>
+
+<div class="question4"  id="question4" style="border:ridge">
+    <h1 id="header4" >This is Question 4 (-)</h1>
+</div>
+
+<div class="answer4" id="answer4" style="border:ridge">
+    <h1>This is Answer 4</h1>
+</div>
+
+<div class="question5"  id="question5" style="border:ridge">
+    <h1 id="header5" >This is Question 5 (-)</h1>
+</div>
+
+<div class="answer5" id="answer5" style="border:ridge">
+    <h1>This is Answer 5</h1>
+</div>
+
+
+<script>
+    //var questions = $(".question");
+    //var i = 0;
+    //for(i = 0; i < questions.length; i++){
+        //questions[i].on("click", function(){
+            //$(this).
+       //})
+    //}
+    $(".question1").on("click",function() {
+        if ($(".answer1").css("display") == "none") {
+            var element = document.getElementById("header1");
+            element.innerHTML = "This is Question 1 (-)";
+            $(".answer1").show();
+        } else {
+            var element = document.getElementById("header1");
+            element.innerHTML = "This is Question 1 (+)";
+            $(".answer1").hide();
+        }
+    });
+
+    $(".question2").on("click",function() {
+        if ($(".answer2").css("display") == "none") {
+            var element = document.getElementById("header2");
+            element.innerHTML = "This is Question 2 (-)";
+            $(".answer2").show();
+        } else {
+            var element = document.getElementById("header2");
+            element.innerHTML = "This is Question 2 (+)";
+            $(".answer2").hide();
+        }
+    });
+
+    $(".question3").on("click",function() {
+        if ($(".answer3").css("display") == "none") {
+            var element = document.getElementById("header3");
+            element.innerHTML = "This is Question 3 (-)";
+            $(".answer3").show();
+        } else {
+            var element = document.getElementById("header3");
+            element.innerHTML = "This is Question 3 (+)";
+            $(".answer3").hide();
+        }
+    });
+
+    $(".question4").on("click",function() {
+        if ($(".answer4").css("display") == "none") {
+            var element = document.getElementById("header4");
+            element.innerHTML = "This is Question 4 (-)";
+            $(".answer4").show();
+        } else {
+            var element = document.getElementById("header4");
+            element.innerHTML = "This is Question 4 (+)";
+            $(".answer4").hide();
+        }
+    });
+
+    $(".question5").on("click",function() {
+        if ($(".answer5").css("display") == "none") {
+            var element = document.getElementById("header5");
+            element.innerHTML = "This is Question 5 (-)";
+            $(".answer5").show();
+        } else {
+            var element = document.getElementById("header5");
+            element.innerHTML = "This is Question 5 (+)";
+            $(".answer5").hide();
+        }
+    });
+
+</script>
+
+
+
+
+</body>
+</html>

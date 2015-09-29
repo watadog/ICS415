@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W5C2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1 style="text-align:center">Terrible Jokes (pt. 1)</h1>
+    </div>
+
+    <div class="question" style="border:ridge">
+        <p style="text-align:center">Q: What's red and smells like blue paint?</p>
+    </div>
+
+    <div class="answer" style="display: none;">
+        <p style="text-align:center">A: Red paint</p>
+    </div>
+
+    <div class="square" style="background:#98bf21;height:100px;width:100px;position:absolute;">
+        <p style="text-align: center">Click Me!</p>
+    </div>
+
+
+
+</body>
+
+<script>
+    $(".question").on("click",function() {
+        if ($(".answer").css("display") == "none") {
+            $(".answer").show();
+            return;
+        } else {
+            $(".answer").hide();
+        }
+    });
+
+    $(".square").on("click", function(){
+
+            $(".square").animate({left: '1265px'});
+    });
+
+
+</script>
+
+</html>
