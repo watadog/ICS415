@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnlineCashRegister</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="OCR.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+            <h1>WebsiteTitle</h1>
+        </div>
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">Home</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="calc.html">Calculator</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3" id="leftBar" style="border:ridge">
+            <h3 align="center">Hours of Operations</h3>
+
+            <table border="1" width="100%">
+                <tr>
+                    <td bgcolor="#a9a9a9" colspan="2">Day</td>
+                    <td bgcolor="#a9a9a9" colspan="2">Hours</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#f5f5dc" colspan="2">Monday</td>
+                    <td bgcolor="#f5f5dc" colspan="2">10:00am - 11:00pm</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tuesday</td>
+                    <td colspan="2">10:00am - 11:30pm</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#f5f5dc" colspan="2">Wednesday</td>
+                    <td bgcolor="#f5f5dc" colspan="2">10:00am - 11:30pm</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Thursday</td>
+                    <td colspan="2">10:00am - 11:30pm</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#f5f5dc" colspan="2">Friday</td>
+                    <td bgcolor="#f5f5dc" colspan="2">10:00am - 11:30pm</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Saturday</td>
+                    <td colspan="2">10:00am - 11:30pm</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#f5f5dc" colspan="2">Sunday</td>
+                    <td bgcolor="#f5f5dc" colspan="2">10:00am - 11:30pm</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-xs-9" id="rightBar" style="border:ridge">
+            <ul class="nav nav-tabs">
+                <li><a href="#home">About Us</a></li>
+                <li><a href="#menu1">Menu</a></li>
+                <li><a href="#menu2">Locations</a></li>
+                <li><a href="#menu3">Gallery</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div id="home" class="tab-pane fade in active">
+                    <h3>About Us</h3>
+                    <p>This is Home tab's content</p>
+                </div>
+
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu Items</h3>
+                </div>
+
+
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Locations</h3>
+                </div>
+
+                <div id="menu3" class="tab-pane fade">
+                    <h3>IMAGES</h3>
+                    <p>Best image sharing site ever!</p>
+                    <img src="" class="img-responsive" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+    });
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12" id="footer">
+            <br>
+            <p align="center"><font size="1">Copyright(C) Ruan & Watanabe LLC</font></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
